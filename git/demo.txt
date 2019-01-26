@@ -1,2 +1,3 @@
 ceci est modifié sur le master
 ceci est modifié en local
+voici quelque chose de différent
