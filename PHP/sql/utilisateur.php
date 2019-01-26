@@ -11,13 +11,18 @@
 ==============================================================================
 */
 
+echo "<h1>Bienvenue sur la démonstration de page de connexion</h1>";
+
 // Connexion à la base de données
-$db_host = "localhost:3406";
+$db_host = "localhost";
 $db_user = "fanzine";
 $db_pass = "top_secret";
 $db_name = "fanzine";
-
-$db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
+try{
+	$db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
+}catch (PDOException $e){
+	echo 'Échec lors de la connexion : ' . $e->getMessage();
+}
 
 if(!empty($_COOKIE['connexion'])){
 
