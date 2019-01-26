@@ -1,4 +1,14 @@
 <?php
+/*
+==============================================================================
+
+ Ce script fait partie d'une série d'exemples de code mise à disposition
+  sur https://github.com/marcyves/Developpeur-Web
+
+ (c) 2019 Marc Augier
+
+==============================================================================
+*/
 
 // config.inc.php
 // Connexion à la base de données
@@ -13,7 +23,7 @@ $db = new mysqli($db_host, $db_user, $db_pass, $db_name);
 if ($db->connect_errno){
 	echo "<h2>Erreur de connexion à la base de données</h2>";
 	echo "Erreur : ".$db->connect_error." code (".$db->connect_errno.")";
-	
+
 	exit;
 }
 
