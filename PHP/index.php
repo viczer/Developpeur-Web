@@ -27,6 +27,7 @@
 		<h2>Exemples et mini projets</h2>
 		<ul>
 			<li><a href="calculatrice/">Calculatrice</a></li>
+			<li><a href="eshop/">Boutique en ligne</a></li>
 			<li><a href="sql/utilisateur.php">Page de connexion d'un utilisateur</a></li>
 			<li><a href="intégration HTML/">PHP et template HTML</a></li>
 		</ul>
