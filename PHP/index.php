@@ -23,8 +23,13 @@
 			<li><a href="cookie/">Les cookies</a></li>
 			<li><a href="session/">Les sessions</a></li>
 			<li><a href="pwd/">Gérer un mot de passe crypté</a></li>
-	</ul>
-		<h2>Exemples et mini projets</h2>
+		</ul>
+		<h2>Programmation orientée objet</h2>
+		<ul>
+			<li><a href="poo/">Exemples de base</a></li>
+			<li><a href="mvc/">Classes et MVC</a></li>
+		</ul>
+			<h2>Exemples et mini projets</h2>
 		<ul>
 			<li><a href="calculatrice/">Calculatrice</a></li>
 			<li><a href="eshop/">Boutique en ligne</a></li>
