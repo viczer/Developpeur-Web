@@ -31,7 +31,7 @@ $menu = array(
 new MenuEntry("Accueil", "index",($page=="index"?"active":"")),
 new MenuEntry("Le Blog", "blog",($page=="blog"?"active":"")),
 new MenuEntry("L'Album","album",($page=="album"?"active":"")),
-new MenuEntry("Le Catalogue","catalogue",($_GET['page']=="catalogue"?"active":""))
+new MenuEntry("Le Catalogue","catalogue",($page=="catalogue"?"active":""))
  );
 
 $ma_page->setMenu($menu);
