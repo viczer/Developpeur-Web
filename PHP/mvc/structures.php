@@ -33,8 +33,11 @@ $menu2 = array(
 							"statut" => ""
 							)
 			);
+	
 foreach($menu2 as $label => $tab){
 	echo "$label pointe sur ".$tab['lien']."<br>";
 }
-			
+	
+var_dump(json_encode($menu2));
+	
 ?>
