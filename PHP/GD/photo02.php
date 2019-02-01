@@ -1,4 +1,14 @@
 <?php
+/*
+==============================================================================
+
+ Ce script fait partie d'une série d'exemples de code mise à disposition
+  sur https://github.com/marcyves/Developpeur-Web
+
+ (c) 2019 Marc Augier
+
+==============================================================================
+*/
 header("Content-type: image/jpeg");
 $mon_image = imagecreatefromjpeg("icone.jpg");
 $ma_police = dirname(__FILE__)."/WeatherSunday-PersonalUse.ttf";

@@ -1,5 +1,14 @@
 <?php
+/*
+==============================================================================
 
+ Ce script fait partie d'une série d'exemples de code mise à disposition
+  sur https://github.com/marcyves/Developpeur-Web
+
+ (c) 2019 Marc Augier
+
+==============================================================================
+*/
 $photo = "cervin.jpg";
 echo "<h3>photo de départ</h3><img src='depart/$photo'>";
 $source = imagecreatefromjpeg("depart/".$photo);
