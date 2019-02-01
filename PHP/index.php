@@ -22,7 +22,10 @@
 			<li><a href="bases/">Les bases</a></li>
 			<li><a href="cookie/">Les cookies</a></li>
 			<li><a href="session/">Les sessions</a></li>
+			<li><a href="sql/">Gérer une base de données</a></li>
 			<li><a href="pwd/">Gérer un mot de passe crypté</a></li>
+			<li><a href="GD/">Images et graphismes</a></li>
+			<li><a href="mail/">Messagerie</a></li>
 		</ul>
 		<h2>Programmation orientée objet</h2>
 		<ul>
