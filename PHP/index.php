@@ -30,7 +30,9 @@
 		<h2>Programmation orientée objet</h2>
 		<ul>
 			<li><a href="poo/">Exemples de base</a></li>
+			<p>Les bases de la programmation orientée object en PHP, et La gestion des espaces de nom ou namespaces. Il est également démonstré l'utilisation de autoload, avec et sans les espaces de nom.</p>
 			<li><a href="mvc/">Classes et MVC</a></li>
+			<p>Dans cette partie nous trouvons les étapes de la mise en place d'une architecture MVC étape par étape.</p>
 		</ul>
 			<h2>Exemples et mini projets</h2>
 		<ul>
