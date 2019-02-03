@@ -42,5 +42,6 @@
 			<li><a href="intégration HTML/">PHP et template HTML</a></li>
 		</ul>
 		<h3>
+			<a href="https://github.com/marcyves/Developpeur-Web">Les scripts sur GitHub</a>
 	</body>
 </html>
