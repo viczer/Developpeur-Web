@@ -6,11 +6,11 @@ Ces quelques exemples de code ont, sont et seront utilisés pour accompagner mes
 ## Liens utiles
 
 - [PHP Standard Recommandation](https://www.php-fig.org/psr/)
-- [Composer](https://getcomposer.org/) pour gérer les dépendances
+- [Composer](https://getcomposer.org/) pour gérer les dépendances d'un projet et les installer automatiquement.
 
 
 - [Bootstrap](https://getbootstrap.com/)
-- []()
+- [Shards](https://designrevision.com/downloads/shards/), Bootstrap, en mieux.
 - [Symfony](https://symfony.com/)
 
 
