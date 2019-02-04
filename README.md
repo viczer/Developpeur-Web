@@ -3,6 +3,16 @@
 ## Exemples de code
 Ces quelques exemples de code ont, sont et seront utilisés pour accompagner mes cours de développement Web.
 
+## Liens utiles
+
+- [PHP Standard Recommandation](https://www.php-fig.org/psr/)
+- [Composer](https://getcomposer.org/) pour gérer les dépendances d'un projet et les installer automatiquement.
+
+
+- [Bootstrap](https://getbootstrap.com/)
+- [Shards](https://designrevision.com/downloads/shards/), Bootstrap, en mieux.
+- [Symfony](https://symfony.com/)
+
 
 ## Notice
 <p align="center"><img src="https://licensebuttons.net/l/by-sa/3.0/fr/88x31.png" alt="Licence"></p>
