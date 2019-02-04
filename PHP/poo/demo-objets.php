@@ -10,8 +10,13 @@
 ==============================================================================
 */
 
-include('class/class.produit.php');
-include('class/class.musique.php');
+function __autoload($classe){
+	echo "<br>Je charge la classe $classe";
+	include "class/class.$classe.php";
+}
+
+//include('class/class.produit.php');
+//include('class/class.musique.php');
 
 /*
 
