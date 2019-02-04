@@ -5,21 +5,26 @@ class Page
 	private $titre_page = "";
 	private $sous_titre_page = "";
 	private $contenu_page = "";
+	private $type_page = 0;
 	
 	function __construct($nom){
 		$parm_page = json_decode(file_get_contents("pages/$nom.json"),TRUE);
 		
-		$this->titre_page = $parm_page['titre_page'];
-		$this->sous_titre_page =  $parm_page['sous_titre_page'];
+		$this->titre_page      = $parm_page['titre_page'];
+		$this->sous_titre_page = $parm_page['sous_titre_page'];
+		$this->type_page       = $parm_page['type_page'];
 		
-		$menu = file_get_contents("template/menu.html");
-		$contenu = file_get_contents("template/contenu.html");
-		$pied = file_get_contents("template/pied.html");
+		// Préparation du menu
+		$menu = new Menu($nom);
+		
+		// Préparation du contenu
+		$contenu = file_get_contents("template/contenu".$this->type_page.".html");
+		$pied    = file_get_contents("template/pied.html");
 		
 		$this->contenu_page = $menu . $contenu . $pied;
 	}
 
-	function preparer_page($template, $variables){
+	static function coderTemplate($template, $variables){
 	
 		foreach($variables as $clef => $variable){
 			$template = str_replace("{{ $clef }}", $variable, $template);
@@ -35,7 +40,7 @@ class Page
 						 "sous-titre-page" => $this->sous_titre_page,
 						 "contenu-page" => $this->contenu_page);
 						  
-		return $this->preparer_page($template, $tableau);
+		return Self::coderTemplate($template, $tableau);
 	}
 }
 
