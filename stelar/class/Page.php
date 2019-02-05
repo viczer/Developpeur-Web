@@ -4,7 +4,7 @@ class Page
 {
 	private $titre_page = "";
 	private $sous_titre_page = "";
-	private $contenu_page = "";
+	protected $contenu_page = "";
 	private $type_page = 0;
 	
 	function __construct($nom){
@@ -15,8 +15,8 @@ class Page
 		$this->type_page       = $parm_page['type_page'];
 		
 		// Préparation du menu
+		//		$menu    = file_get_contents("template/menu.html");
 		$menu = new Menu($nom);
-		
 		// Préparation du contenu
 		$contenu = file_get_contents("template/contenu".$this->type_page.".html");
 		$pied    = file_get_contents("template/pied.html");
@@ -26,8 +26,8 @@ class Page
 
 	static function coderTemplate($template, $variables){
 	
-		foreach($variables as $clef => $variable){
-			$template = str_replace("{{ $clef }}", $variable, $template);
+		foreach($variables as $clef => $valeur){
+			$template = str_replace("{{ $clef }}", $valeur, $template);
 		}
 
 	return $template;
@@ -36,11 +36,11 @@ class Page
 	function __toString(){
 		$template = file_get_contents("template/general.html");
 		
-		$tableau = array("titre-page" => $this->titre_page,
-						 "sous-titre-page" => $this->sous_titre_page,
-						 "contenu-page" => $this->contenu_page);
-						  
-		return Self::coderTemplate($template, $tableau);
+		$variables = array("titre-page" => $this->titre_page,
+						   "sous-titre-page" => $this->sous_titre_page,
+						   "contenu-page" => $this->contenu_page);
+
+		return Self::coderTemplate($template, $variables);
 	}
 }
 

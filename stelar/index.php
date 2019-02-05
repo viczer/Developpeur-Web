@@ -1,7 +1,7 @@
 <?php
 
 function __autoload($classe){
-	echo "<br>Je charge la classe $classe";
+//	echo "<br>Je charge la classe $classe";
 	
 	if ($pos = strpos($classe,'\\')){
 		$classe = str_replace('\\',DIRECTORY_SEPARATOR,$classe);
@@ -11,7 +11,13 @@ function __autoload($classe){
 	}
 }
 
-$ma_page = new Page("index");
+if(empty($_GET['page'])){
+	$page = "index";
+}else{
+	$page = $_GET['page'];
+}
+
+$ma_page = new $page();
 
 echo $ma_page;
 
